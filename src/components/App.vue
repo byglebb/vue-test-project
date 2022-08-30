@@ -1,21 +1,22 @@
 <template>
   <div class="body">
     <div class="page">
-      <main-header />
-      <div class>
-
-      </div>
+      <MainHeader />
+      <MainContent />
     </div>
   </div>
 
 </template>
 
 <script>
-import MainHeader from './MainHeader.vue'
+import MainContent from './MainContent.vue';
+import MainHeader from './MainHeader.vue';
 export default {
   components: {
+    MainHeader,
+    MainContent,
     MainHeader
-  },
+},
   data() {
     return {
 
