@@ -15,8 +15,7 @@ export default {
   components: {
     MainHeader,
     MainContent,
-    MainHeader
-},
+  },
   data() {
     return {
 
@@ -42,6 +41,7 @@ export default {
 
 .body {
   padding: 32px;
+  background: rgba(255, 254, 251, 0.8);
 }
 
 .page {
