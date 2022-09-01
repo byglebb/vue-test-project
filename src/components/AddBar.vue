@@ -24,7 +24,7 @@
       <input type="text" id="price" class="addbar__form-item" placeholder="Введите цену" required>
       <span class="addbar__input-error"></span>
 
-      <button class="addbar__button">Добавить товар</button>
+      <button class="addbar__button" type="button">Добавить товар</button>
     </form>
   </section>
 </template>

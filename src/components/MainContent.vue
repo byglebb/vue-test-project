@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .content {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 16px;
 }
 </style>
