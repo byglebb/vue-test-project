@@ -31,6 +31,9 @@ export default {
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro:wght@300;400;600;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Source+Sans+Pro:wght@300;400;600;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
 
 * {
   margin: 0;
