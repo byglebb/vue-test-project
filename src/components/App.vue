@@ -3,6 +3,7 @@
     <div class="page">
       <MainHeader />
       <MainContent />
+      <Footer />
     </div>
   </div>
 
@@ -11,11 +12,13 @@
 <script>
 import MainContent from './MainContent.vue';
 import MainHeader from './MainHeader.vue';
+import Footer from './Footer.vue';
 export default {
   components: {
     MainHeader,
     MainContent,
-  },
+    Footer
+},
   data() {
     return {
 
