@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     createCard() {
-      
+      initialCards.name
     }
   }
 }
