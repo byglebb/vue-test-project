@@ -26,8 +26,15 @@ export default {
 
 <style scoped>
 .content {
+  max-width: 100%;
   display: flex;
   /* border: 1px solid red; */
   margin-top: 16px;
+}
+
+@media (max-width: 766px) {
+  .content {
+    flex-direction: column;
+  }
 }
 </style>

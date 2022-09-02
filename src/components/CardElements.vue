@@ -1,7 +1,7 @@
 <template>
   <section class="elements">
     <article class="element">
-      <button class="element__delete-button"></button>
+      <button class="element__delete-button" type="button"></button>
       <img class="element__image" src="../images/Picture.png">
       <div class="element__description-container">
         <h2 class="element__name">Наименование товара Наименование товара</h2>
@@ -11,11 +11,31 @@
         <p class="element__price">10 000 руб.</p>
       </div>
     </article>
+
     <article class="element">
-      <button class="element__delete-button"></button>
+      <button class="element__delete-button" type="button"></button>
+      <img class="element__image" src="../images/Picture.png">
+      <div class="element__description-container">
+        <h2 class="element__name">Наименование товара Наименование товара</h2>
+        <p class="element__description">Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+          интересное описание товара в несколько строк ки интересное описание товара в несколько строк. Довольно-таки
+          интересное</p>
+        <p class="element__price">10 000 руб.</p>
+      </div>
     </article>
+
     <article class="element">
+      <button class="element__delete-button" type="button"></button>
+      <img class="element__image" src="../images/Picture.png">
+      <div class="element__description-container">
+        <h2 class="element__name">Наименование товара Наименование товара</h2>
+        <p class="element__description">Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+          интересное описание товара в несколько строк ки интересное описание товара в несколько строк. Довольно-таки
+          интересное</p>
+        <p class="element__price">10 000 руб.</p>
+      </div>
     </article>
+    
     <article class="element">
     </article>
     <article class="element">
@@ -43,6 +63,7 @@
 
 <style>
 .elements {
+  min-width: 332px;
   display: grid;
   margin-left: auto;
   margin-right: auto;

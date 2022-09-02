@@ -35,8 +35,6 @@
 
 <style scoped>
 .addbar {
-  /* display: flex;
-  flex-direction: column; */
   padding: 24px;
   width: 332px;
   height: 440px;
@@ -45,9 +43,6 @@
   background: #FFFEFB;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
   border-radius: 4px;
-
-  position: sticky;
-  top: 24px;
 }
 
 .addbar__form {
@@ -146,5 +141,20 @@
 
 .addbar__button_disabled:hover {
   opacity: 1;
+}
+
+@media (min-width: 766px) {
+  .addbar {
+    position: sticky;
+    top: 24px;
+  }
+}
+
+@media (max-width: 766px) {
+  .addbar {
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

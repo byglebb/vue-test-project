@@ -10,10 +10,8 @@
 
 <style scoped>
 .footer {
-  /* border: 1px solid peru; */
   margin-left: auto;
   margin-right: auto;
-  /* max-width: calc(100% - 400px); */
   margin-top: 40px;
   font-family: 'Source Sans Pro';
   font-style: normal;

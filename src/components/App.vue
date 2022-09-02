@@ -55,4 +55,10 @@ export default {
   margin: 0 auto;
   /* border: 1px solid red; */
 }
+
+@media (max-width: 766px) {
+  .body {
+    padding: 16px;
+  }
+}
 </style>
