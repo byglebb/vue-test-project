@@ -1,7 +1,10 @@
 <template>
   <main class="content">
     <AddBar @add="createCard" />
-    <CardElements v-bind:initialCards="initialCards" />
+    <CardElements 
+      v-bind:initialCards="initialCards" 
+      @remove="removeCard"
+      />
   </main>
 </template>
 
@@ -17,6 +20,7 @@ export default {
     return {
       initialCards: [
         {
+          id: 1,
           name: "Архыз",
           description:
             "Это кавказский хребет Это кавказский хребет Это кавказский хребетЭто кавказский хребет Это кавказский хребет",
@@ -25,6 +29,7 @@ export default {
           price: "12300",
         },
         {
+          id: 2,
           name: "Челябинская область",
           description: "А это ЧЕЛЯБИНСК А это ЧЕЛЯБИНСК А это ЧЕЛЯБИНСК",
           link:
@@ -32,6 +37,7 @@ export default {
           price: "300 руб.",
         },
         {
+          id: 3,
           name: "Иваново",
           description:
             "Город невест Город невест Город невестГород невест Город невест Город невест Город невест",
@@ -40,6 +46,7 @@ export default {
           price: "300 руб.",
         },
         {
+          id: 4,
           name: "Камчатка",
           description:
             "Вулканы, красота: Дорого! Вулканы, красота: Дорого! Вулканы, красота: Дорого!Вулканы, красота: Дорого! Вулканы, красота: Дорого! Вулканы, красота: Дорого!",
@@ -48,6 +55,7 @@ export default {
           price: "1 000 000 руб.",
         },
         {
+          id: 5,
           name: "Холмогорский район",
           description: "Ноу нейм для меня",
           link:
@@ -55,6 +63,7 @@ export default {
           price: "5 000 руб.",
         },
         {
+          id: 6,
           name: "Байкал",
           description:
             "Самое полноводное озеро в мире. Самое полноводное озеро в мире. Самое полноводное озеро в мире.",
@@ -70,6 +79,9 @@ export default {
       console.log(newCard);
       this.initialCards.unshift(newCard);
     },
+    removeCard(card) {
+      this.initialCards = this.initialCards.filter((c) => c.id !== card.id)
+    },
   },
 };
 </script>
@@ -78,7 +90,6 @@ export default {
 .content {
   max-width: 100%;
   display: flex;
-  /* border: 1px solid red; */
   margin-top: 16px;
 }
 

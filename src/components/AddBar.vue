@@ -83,13 +83,14 @@ export default {
   methods: {
     createCard(evt) {
       evt.preventDefault();
-      const newCard = {
-        name: this.name,
-        description: this.description,
-        link: this.link,
-        price: this.price,
-      };
+      // const newCard = {
+      //   name: this.name,
+      //   description: this.description,
+      //   link: this.link,
+      //   price: this.price,
+      // };
       // this.initialCards.push(newCard);
+      this.newCard.id = Date.now();
       this.$emit("add", this.newCard);
       this.newCard = {
         name: "",
@@ -107,7 +108,6 @@ export default {
   padding: 24px;
   width: 332px;
   height: 440px;
-  /* border: 1px solid red; */
   margin-right: 16px;
   background: #fffefb;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
@@ -117,7 +117,6 @@ export default {
 .addbar__form {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid peru; */
 }
 
 .addbar__form-label {
