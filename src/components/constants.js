@@ -36,3 +36,5 @@ export const initialCards = [
     price: 'Безценно!'
   }
 ];
+
+console.log(initialCards);
