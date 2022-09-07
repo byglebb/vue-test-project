@@ -5,15 +5,6 @@
         >Наименование товара
         <div class="addbar__dot"></div>
       </label>
-      <!-- <input
-        v-bind:value="newCard.name"
-        @input="newCard.name = $event.target.value"
-        type="text"
-        id="name"
-        class="addbar__form-item"
-        placeholder="Введите наименование товара"
-        required
-      /> -->
       <input
         v-model="newCard.name"
         type="text"
@@ -83,26 +74,16 @@ export default {
   methods: {
     createCard(evt) {
       evt.preventDefault();
-      // const newCard = {
-      //   name: this.name,
-      //   description: this.description,
-      //   link: this.link,
-      //   price: this.price,
-      // };
-      // this.initialCards.push(newCard);
-      this.newCard.id = Date.now();
-      this.$emit("add", this.newCard);
-      this.newCard = {
+      this.newCard.id = Date.now(); // добавление Id с текущей датой в объект с новой карточкой
+      this.$emit("add", this.newCard); // Создание события добавления новой карточки
+      this.$emit('open'); // Создание события открытия попапа об успешном создании карточки
+      this.newCard = { // очистка формы
         name: "",
         description: "",
         link: "",
         price: "",
       };
-      this.openPopup;
     },
-    openPopup() {
-      console.log('Попап открыт');
-    }
   },
 };
 </script>

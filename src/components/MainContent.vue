@@ -1,6 +1,6 @@
 <template>
   <main class="content">
-    <AddBar @add="createCard" />
+    <AddBar @add="createCard" @open="$emit('open')"/>
     <CardElements 
       v-bind:initialCards="initialCards" 
       @remove="removeCard"

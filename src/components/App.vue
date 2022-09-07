@@ -2,8 +2,9 @@
   <div class="body">
     <div class="page">
       <MainHeader />
-      <MainContent />
-      <Footer />
+      <MainContent @open="openPopup"/>
+      <TooltipPopup v-model:open="visibleState"/>
+      <MainFooter />
     </div>
   </div>
 
@@ -12,30 +13,30 @@
 <script>
 import MainContent from './MainContent.vue';
 import MainHeader from './MainHeader.vue';
-import Footer from './Footer.vue';
+import MainFooter from './MainFooter.vue';
+import TooltipPopup from './UI/TooltipPopup.vue';
 export default {
   components: {
     MainHeader,
     MainContent,
-    Footer
+    TooltipPopup,
+    MainFooter,
 },
   data() {
     return {
-
+      visibleState: false,
     }
   },
   methods: {
-
+    openPopup() {
+      this.visibleState = true;
+    }
   }
 }
 </script>
 
 <style>
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro:wght@300;400;600;900&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Source+Sans+Pro:wght@300;400;600;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
 
 * {
