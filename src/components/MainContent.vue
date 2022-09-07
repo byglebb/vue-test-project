@@ -26,7 +26,7 @@ export default {
             "Это кавказский хребет Это кавказский хребет Это кавказский хребетЭто кавказский хребет Это кавказский хребет",
           link:
             "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
-          price: "12300",
+          price: "12 300 руб.",
         },
         {
           id: 2,
@@ -34,7 +34,7 @@ export default {
           description: "А это ЧЕЛЯБИНСК А это ЧЕЛЯБИНСК А это ЧЕЛЯБИНСК",
           link:
             "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg",
-          price: "300 руб.",
+          price: "33 433 400 руб.",
         },
         {
           id: 3,
@@ -60,7 +60,7 @@ export default {
           description: "Ноу нейм для меня",
           link:
             "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg",
-          price: "5 000 руб.",
+          price: "5000 руб.",
         },
         {
           id: 6,

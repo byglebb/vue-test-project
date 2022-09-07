@@ -98,7 +98,11 @@ export default {
         link: "",
         price: "",
       };
+      this.openPopup;
     },
+    openPopup() {
+      console.log('Попап открыт');
+    }
   },
 };
 </script>
