@@ -1,8 +1,7 @@
 <template>
   <div class="popup" v-if="open" @click="closePopup">
-    <div class="popup__overlay"></div>
-    <div class="popup__window">
-      <button class="popup__close-button" type="button"></button>
+    <div class="popup__window" @click.stop>
+      <button class="popup__close-button" type="button" @click="closePopup"></button>
       <img class='popup__picture' src='../../images/Pic_success.svg' alt='Подтверждение добавления' />
       <h2 className="popup__text">Товар успешно добавлен!</h2>
     </div>
@@ -39,14 +38,6 @@ export default {
   /* opacity: 0; */
   /* visibility: hidden; */
   /* transition: visibility .3s, opacity .3s linear; */
-}
-
-.popup__overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .popup__window {
