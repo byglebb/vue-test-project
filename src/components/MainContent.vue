@@ -76,11 +76,16 @@ export default {
   },
   methods: {
     createCard(newCard) {
-      console.log(newCard);
+      // console.log(newCard);
       this.initialCards.unshift(newCard);
+      this.onCardList();
     },
     removeCard(card) {
-      this.initialCards = this.initialCards.filter((c) => c.id !== card.id)
+      this.initialCards = this.initialCards.filter((c) => c.id !== card.id);
+      this.onCardList();
+    },
+    onCardList() {
+      this.$emit('cards', this.initialCards);
     },
   },
 };

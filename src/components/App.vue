@@ -1,9 +1,11 @@
 <template>
   <div class="body">
     <div class="page">
+      <!-- <MainHeader :cardsList="cardsList" /> -->
       <MainHeader />
-      <MainContent @open="openPopup"/>
-      <TooltipPopup v-model:open="visibleState"/>
+      <!-- <MainContent @open="openPopup" @cards="checkCards" /> -->
+      <MainContent @open="openPopup" />
+      <tooltip-popup v-model:open="visibleState" />
       <MainFooter />
     </div>
   </div>
@@ -14,23 +16,33 @@
 import MainContent from './MainContent.vue';
 import MainHeader from './MainHeader.vue';
 import MainFooter from './MainFooter.vue';
-import TooltipPopup from './UI/TooltipPopup.vue';
+
 export default {
   components: {
     MainHeader,
     MainContent,
-    TooltipPopup,
     MainFooter,
-},
+  },
   data() {
     return {
       visibleState: false,
+      // cardsList: this.checkCards,
     }
   },
   methods: {
     openPopup() {
       this.visibleState = true;
-    }
+    },
+    // checkCards(initialCards) {
+    //   const interpList = initialCards.slice();
+    //   console.log(initialCards);
+    //   console.log(interpList);
+    //   this.cardsList.push(interpList);
+    //   console.log(this.cardsList);
+    //   return {
+    //     interpList
+    //   }
+    // },
   }
 }
 </script>

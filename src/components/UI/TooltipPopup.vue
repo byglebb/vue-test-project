@@ -3,13 +3,14 @@
     <div class="popup__window" @click.stop>
       <button class="popup__close-button" type="button" @click="closePopup"></button>
       <img class='popup__picture' src='../../images/Pic_success.svg' alt='Подтверждение добавления' />
-      <h2 className="popup__text">Товар успешно добавлен!</h2>
+      <h2 class="popup__text">Товар успешно добавлен!</h2>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'tooltip-popup',
   props: {
     open: {
       type: Boolean,
