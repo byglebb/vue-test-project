@@ -14,11 +14,6 @@
 * Здесь можно добавить карточку с названием товара, фотографией, описанием и ценой.
 * Уалить карточку.
 * Сортировать карточки по наименованию, цене min/max.
-* Можно лайкнуть изображение.
-* Есть возможность добавить новое "Место".
-* Рассмотреть фото на весь экран.
-* А также удалить его. Ну практически социальная сеть.
-* Зарегестрироваться и авторизоваться перед тем, как увидеть основную страницу
 
 ## Технологии
 
@@ -39,11 +34,14 @@ npm install
 ```
 npm run serve
 ```
+If compiled successfully, app running at http://localhost:8080/
 
 ### Compiles and minifies for production
 ```
 npm run build
 ```
+If Build complete. The dist directory is ready to be deployed.
+Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
